@@ -1,0 +1,117 @@
+/* Importing fonts */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+
+
+/* General Reset */
+* {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Ensures padding and border do not affect width/height */
+}
+
+body{
+  transition: .2s;
+}
+/* Header and navigation styling */
+header {
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px #85858594;
+}
+
+.nav-center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; /* Ensures vertical alignment of items */
+  padding: 10px 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+h4 {
+  font-size: 1.8rem; /* Use rem for better scalability */
+  letter-spacing: 3px; /* Reduce spacing for better appearance */
+  color: rgb(67, 192, 192);
+  user-select: none;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-links li {
+  padding: 0 20px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  letter-spacing: 2px;
+  font-weight: 300;
+  transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+a:hover {
+  color: #43c0c0; /* Change color on hover */
+}
+main {
+  min-height: calc(100vh - 4rem);
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.container > h2{
+  color: aliceblue;
+  background-color: #000000;
+  padding: 40px 70px;
+  border-radius: 15px;
+  max-width: 360px;
+}
+.container > button{
+  padding: 13px 50px;
+  border-radius: 10px;
+  /* background-color: transparent; */
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight:900;
+  letter-spacing: 2px;
+  
+}
+.container > button:hover{
+  background-color: #d4d4d4;
+  transition:all 0.4s;
+  
+}
+
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .nav-center {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .nav-links {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .nav-links li {
+    font-size: 1.1rem; /* Adjust font size for smaller screens */
+    padding: 5px 0;
+  }
+}
+
